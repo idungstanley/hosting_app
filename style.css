@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --primary-color:#047aed;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -27,8 +30,9 @@ p{
 img{
     width: 100%;
 }
+/* nav bar styling */
 .navbar{
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
@@ -46,6 +50,25 @@ img{
 .navbar .flex{
     justify-content: space-between;
 }
+/* showcase */
+.showcase{
+    height: 400px;
+    background: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase p{
+    margin: 20px 0;
+}
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+/* utilities */
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -54,6 +77,14 @@ img{
 }
 .flex{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100%;
