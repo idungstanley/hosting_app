@@ -9,7 +9,7 @@
     background-color: #fff;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0 blue, 0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
     padding: 20px;
     margin: 10px;
 }
@@ -31,6 +31,45 @@
 
 .btn:hover{
     transform: scale(0.98);
+}
+
+/* backgrounds & colored butttons */
+.bg-primary, .btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.bg-secondary, .btn-secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.bg-dark, .btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.bg-light, .btn-light{
+    background-color: var(--light-color);
+    color: #333;
+}
+.bg-primary a, .btn-primary a, .bg-secondary a, .btn-secondary a, .bg-dark a, .btn-dark a{
+    color: #fff;
+}
+
+
+/* text sizes */
+.lead{
+    font-size: 20px;
+}
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+.xl{
+    font-size: 4rem;
 }
 
 .text-center{
